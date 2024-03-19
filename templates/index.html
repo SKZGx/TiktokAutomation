@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Cutter</title>
+</head>
+<body>
+    <h1>Video Cutter</h1>
+    
+    <form action="/process" method="post" enctype="multipart/form-data">
+        <label for="video">Select Video:</label>
+        <input type="file" name="video" accept="video/*" required>
+        
+        <label for="num_parts">Number of Parts:</label>
+        <input type="number" name="num_parts" min="1" required>
+
+        <button type="submit">Cut Video</button>
+    </form>
+</body>
+</html>
